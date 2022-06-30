@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  color: var(--softBlue);
+  font-weight: 300;
+}
+
+#main {
+  width: auto;
+  height: 97vh;
+  position: relative;
+}
+
+#nftCard {
+  background-color: hsl(216, 50%, 16%);
+  position: absolute;
+  width: 330px;
+  height: 585px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1,
+h1 + p,
+div,
+hr,
+.img img {
+  width: 290px;
+  margin: 23px auto 0 auto;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  display: block;
+}
+
+.shadow,
+svg {
+  display: none;
+}
+
+.img:hover .shadow,
+.img:hover svg {
+  display: block;
+  position: absolute;
+}
+
+.img:hover .shadow {
+  background-color: var(--cyan);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  top: -24px;
+  left: 0;
+}
+
+#nftCard,
+.img img,
+.shadow {
+  border-radius: 15px;
+}
+.img:hover svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#nftCard h1 {
+  color: var(--white);
+  font-size: 23px;
+  font-weight: 600;
+}
+
+#nftCard > div:nth-child(4),
+#nftCard > div:nth-child(4) p,
+.creater {
+  display: flex;
+  align-items: center;
+}
+
+#nftCard > div:nth-child(4) {
+  justify-content: space-between;
+}
+
+#nftCard > div:nth-child(4) P:first-child {
+  color: var(--cyan);
+  font-weight: 400;
+}
+
+#nftCard > div:nth-child(4) p {
+  width: 100px;
+  justify-content: space-between;
+}
+
+hr {
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+  height: 1px;
+}
+
+.creater {
+  justify-content: flex-start;
+}
+
+.creater img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.creater span {
+  color: var(--white);
+}
+
+.creater span:hover,
+#nftCard h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 3vh;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
